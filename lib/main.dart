@@ -1,5 +1,5 @@
-import 'package:apitest/home_page.dart';
 import 'package:apitest/locator.dart';
+import 'package:apitest/pages/home_page.dart';
 import 'package:apitest/view_model/view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
