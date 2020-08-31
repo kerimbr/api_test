@@ -1,6 +1,7 @@
 import 'package:apitest/model/api_model.dart';
 import 'package:apitest/model/news.dart';
 import 'package:apitest/utils/api_details.dart';
+import 'package:apitest/widgets/news_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -118,7 +119,12 @@ class _NewsCardState extends State<NewsCard> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: new InkWell(
-              onTap: () {},
+              onTap: () {
+                Route r = MaterialPageRoute(
+                  builder: (context)=>NewsDetails(news: news)
+                );
+                Navigator.push(context, r);
+              },
             ),
           ),
         ),
